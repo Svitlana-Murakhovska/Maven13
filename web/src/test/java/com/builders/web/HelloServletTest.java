@@ -3,10 +3,14 @@ package com.builders.web;
 import com.builders.utils.BuildersUtil;
 import junit.framework.Assert;
 import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+
+import static org.testng.TestNGAntTask.Mode.junit;
 
 public class HelloServletTest {
 
