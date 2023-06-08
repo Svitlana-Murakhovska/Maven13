@@ -12,7 +12,6 @@
       <module fileurl="file://$PROJECT_DIR$/services/src/test/test1.iml" filepath="$PROJECT_DIR$/services/src/test/test1.iml" />
       <module fileurl="file://$PROJECT_DIR$/admin/src/test/test2.iml" filepath="$PROJECT_DIR$/admin/src/test/test2.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/src/test/test3.iml" filepath="$PROJECT_DIR$/utils/src/test/test3.iml" />
-      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/web/web.iml" filepath="$PROJECT_DIR$/web/web.iml" />
     </modules>
   </component>
