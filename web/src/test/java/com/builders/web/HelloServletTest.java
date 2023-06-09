@@ -10,7 +10,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
-import static org.testng.TestNGAntTask.Mode.junit;
+//import static org.testng.TestNGAntTask.Mode.junit;
 
 public class HelloServletTest {
 

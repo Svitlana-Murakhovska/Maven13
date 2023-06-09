@@ -13,6 +13,7 @@
         <module>admin</module>
         <module>web</module>
         <module>utils</module>
+        <module>services</module>
     </modules>
 
     <properties>
