@@ -39,3 +39,5 @@ Run test with Maven
 2. Navigate to the root directory of the project (where the pom.xml file is located).
 3. Run the following command to execute tests:mvn test
 
+///////////////gradle
+

@@ -12,12 +12,5 @@
         <module name="utils" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="admin" target="11" />
-      <module name="builders" target="11" />
-      <module name="services" target="11" />
-      <module name="utils" target="11" />
-      <module name="web" target="11" />
-    </bytecodeTargetLevel>
   </component>
 </project>
