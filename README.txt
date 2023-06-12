@@ -39,5 +39,28 @@ Run test with Maven
 2. Navigate to the root directory of the project (where the pom.xml file is located).
 3. Run the following command to execute tests:mvn test
 
-///////////////gradle
+///////////////Gradle/////////////////////////////////////////////////////////////////////////////
+## Building with Gradle
+1. To build the project using Gradle, navigate to the project directory and run the following command:
+./gradlew build
+
+2. This will compile the source code, run the tests, and generate two artifacts: `web-module.war` for the web module and `admin-module.jar` for the admin module.
+To build the web module separately, use the following command:
+./gradlew buildWar
+
+3. To build the admin module separately, use the following command:
+./gradlew buildJar
+
+4. To run the tests, use the following command:
+./gradlew test
+
+
+
+
+
+
+
+
+
+
 
