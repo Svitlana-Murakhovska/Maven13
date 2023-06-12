@@ -54,6 +54,11 @@ To build the web module separately, use the following command:
 4. To run the tests, use the following command:
 ./gradlew test
 
+5.To build the project and generate the artifacts, navigate to the root directory of your
+project in the command line and run the following command:
+./gradlew assemble
+
+
 
 
 

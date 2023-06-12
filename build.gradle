@@ -1,5 +1,44 @@
+
 plugins {
     id 'war'
     id 'java'
+    id 'application'
+}
+allprojects {
+    repositories {
+        mavenCentral()
+    }
+}
+subprojects {
+    apply plugin: 'java'
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+
+    repositories {
+        mavenCentral()
+    }
+
+    dependencies {
+        // Add your project dependencies here
+    }
+}
+task assembleAdmin(type: Jar) {
+    from sourceSets.main.output
+    classifier = 'admin'
 }
 
+task assembleWeb(type: War) {
+    from sourceSets.main.output
+    classifier = 'web'
+}
+
+artifacts {
+    archives assembleAdmin
+    archives assembleWeb
+}
+
+//
+//group = 'com.example' // TODO
+//version = '1.0-SNAPSHOT'
+//description = 'An example plugin'
+//
