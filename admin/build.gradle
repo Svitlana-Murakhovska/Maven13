@@ -1,5 +1,7 @@
 apply plugin: 'java'
 
 dependencies {
-    // Add your admin module dependencies here
+    // Other dependencies
+    implementation 'org.example:services:1.0-SNAPSHOT'
+    // Add your other web module dependencies here using Gradle notation
 }

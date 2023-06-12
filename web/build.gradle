@@ -1,6 +1,8 @@
 apply plugin: 'war'
 
 dependencies {
-    // Add your web module dependencies here
+    implementation 'org.example:services:1.0-SNAPSHOT'
+    implementation 'org.example:utils:1.0-SNAPSHOT'
+
 }
 
