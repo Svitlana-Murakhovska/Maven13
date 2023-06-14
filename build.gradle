@@ -1,27 +1,36 @@
+import com.sun.org.apache.xalan.internal.xsltc.compiler.Include
 
 plugins {
-    id 'war'
     id 'java'
-    id 'application'
+    id 'war'
 }
-allprojects {
-    repositories {
-        mavenCentral()
-    }
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
 }
+
+// Java version selection
+sourceCompatibility = 11
+targetCompatibility = 11
+
 subprojects {
     apply plugin: 'java'
-    sourceCompatibility = '1.8'
-    targetCompatibility = '1.8'
-
-    repositories {
-        mavenCentral()
-    }
-
-    dependencies {
-        // Add your project dependencies here
-    }
+    apply plugin: 'maven'
 }
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+
+
+dependencies {
+    testImplementation 'org.apache.maven.plugins:maven-surefire-plugin:3.0.0'
+}
+
+
 task assembleAdmin(type: Jar) {
     from sourceSets.main.output
     classifier = 'admin'
@@ -32,13 +41,49 @@ task assembleWeb(type: War) {
     classifier = 'web'
 }
 
-artifacts {
-    archives assembleAdmin
-    archives assembleWeb
-}
+
+
+////////////////
 
 //
-//group = 'com.example' // TODO
-//version = '1.0-SNAPSHOT'
-//description = 'An example plugin'
+//project(':admin') {
+//    apply plugin: 'jar'
+//
+//    dependencies {
+//        testImplementation 'org.apache.maven.plugins:maven-surefire-plugin:2.22.2'
+//    }
+//
+//    jar {
+//        enabled = true
+//    }
+//}
+//
+//project(':web') {
+//    apply plugin: 'war'
+//
+//    dependencies {
+//        testImplementation 'org.apache.maven.plugins:maven-surefire-plugin:2.22.2'
+//    }
+//
+//    war {
+//        enabled = true
+//    }
+//}
+//
+//project(':utils') {
+//    apply plugin: 'java'
+//
+//    dependencies {
+//        testImplementation 'org.apache.maven.plugins:maven-surefire-plugin:2.22.2'
+//    }
+//}
+//
+//project(':services') {
+//    apply plugin: 'java'
+//
+//    dependencies {
+//        testImplementation 'org.apache.maven.plugins:maven-surefire-plugin:2.22.2'
+//    }
+//}
+//
 //
