@@ -16,16 +16,6 @@ The project has the following structure:
 
 ## Build Instructions
 
-### Ant + Ivy (Optional)
-
-1. Install Apache Ant and Ivy if you haven't already.
-2. Open a terminal or command prompt.
-3. Navigate to the root directory of the project.
-4. Run the following command to build the project:
-
-   ```shell
-   ant build
-
 Maven
 1. Install Apache Maven if you haven't already.
 2. Open a terminal or command prompt.
@@ -40,6 +30,20 @@ Run test with Maven
 3. Run the following command to execute tests:mvn test
 
 ///////////////Gradle/////////////////////////////////////////////////////////////////////////////
+Create all files according to schema.
+- root
+  - settings.gradle
+  - build.gradle
+  - admin
+    - build.gradle
+  - web
+    - build.gradle
+  - utils
+    - build.gradle
+  - services
+    - build.gradle
+
+
 ## Building with Gradle
 1. To build the project using Gradle, navigate to the project directory and run the following command:
 ./gradlew build
