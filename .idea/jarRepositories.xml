@@ -7,6 +7,11 @@
       <option name="url" value="https://foundationmedicine.jfrog.io/foundationmedicine/libs-release" />
     </remote-repository>
     <remote-repository>
+      <option name="id" value="BintrayJCenter" />
+      <option name="name" value="BintrayJCenter" />
+      <option name="url" value="https://jcenter.bintray.com/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="MavenRepo" />
       <option name="name" value="MavenRepo" />
       <option name="url" value="https://repo.maven.apache.org/maven2/" />
@@ -25,11 +30,6 @@
       <option name="id" value="snapshots" />
       <option name="name" value="libs-snapshot" />
       <option name="url" value="https://foundationmedicine.jfrog.io/foundationmedicine/libs-snapshot" />
-    </remote-repository>
-    <remote-repository>
-      <option name="id" value="BintrayJCenter" />
-      <option name="name" value="BintrayJCenter" />
-      <option name="url" value="https://jcenter.bintray.com/" />
     </remote-repository>
   </component>
 </project>

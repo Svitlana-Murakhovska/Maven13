@@ -1,8 +1,31 @@
-apply plugin: 'war'
-
-dependencies {
-    implementation 'org.example:services:1.0-SNAPSHOT'
-    implementation 'org.example:utils:1.0-SNAPSHOT'
-
+plugins {
+    id 'java'
+    id 'war'
+    id 'maven'
 }
 
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.example:utils:1.0-SNAPSHOT'
+    implementation 'org.example:services:1.0-SNAPSHOT'
+    providedCompile 'javax.servlet:javax.servlet-api:3.1.0'
+    testImplementation 'junit:junit:4.8.1'
+}
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+war {
+    enabled = true
+    archiveBaseName = 'web-application'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}

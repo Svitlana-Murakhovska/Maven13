@@ -31,21 +31,21 @@ dependencies {
 }
 
 
-task assembleAdmin(type: Jar) {
-    from sourceSets.main.output
-    classifier = 'admin'
-}
-
-task assembleWeb(type: War) {
-    from sourceSets.main.output
-    classifier = 'web'
-}
+//task assembleAdmin(type: Jar) {
+//    from sourceSets.main.output
+//    classifier = 'admin'
+//}
+//
+//task assembleWeb(type: War) {
+//    from sourceSets.main.output
+//    classifier = 'web'
+//}
 
 
 
 ////////////////
 
-//
+
 //project(':admin') {
 //    apply plugin: 'jar'
 //
@@ -57,7 +57,7 @@ task assembleWeb(type: War) {
 //        enabled = true
 //    }
 //}
-//
+
 //project(':web') {
 //    apply plugin: 'war'
 //
