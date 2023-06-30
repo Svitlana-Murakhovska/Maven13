@@ -1,8 +1,8 @@
-
-plugins {
-    id 'java'
-    id 'war'
-}
+//
+//plugins {
+//    id 'java'
+//    id 'war'
+//}
 group 'org.example'
 version '1.0-SNAPSHOT'
 
@@ -26,18 +26,18 @@ dependencies {
     testImplementation 'junit:junit:4.8.1'
 }
 
-task buildAdmin(type: Jar) {
-    archiveFileName = 'admin-module.jar'
-    from sourceSets.main.output
-}
-
-task buildWeb(type: War) {
-    archiveFileName = 'web-module.war'
-    webInf {
-        from 'src/main/webapp/WEB-INF'
-    }
-    from sourceSets.main.output
-}
+//task buildAdmin(type: Jar) {
+//    archiveFileName = 'admin-module.jar'
+//    from sourceSets.main.output
+//}
+//
+//task buildWeb(type: War) {
+//    archiveFileName = 'web-module.war'
+//    webInf {
+//        from 'src/main/webapp/WEB-INF'
+//    }
+//    from sourceSets.main.output
+//}
 
 artifacts {
     archives buildAdmin
