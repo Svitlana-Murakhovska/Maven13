@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'maven'
+//    id 'maven'
 }
 
 group 'org.example'
@@ -11,7 +11,10 @@ repositories {
 }
 
 dependencies {
-    //implementation 'org.example:services:1.0-SNAPSHOT' (project +iml file) забрати в загального (вар джар)
+    implementation project(':services')
+    //implementation project('org.example:services:1.0-SNAPSHOT')
+    //implementation 'org.example:services:1.0-SNAPSHOT
+    // (project +iml file) забрати в загального (вар джар)
     testImplementation 'junit:junit:4.8.1'
 }
 
