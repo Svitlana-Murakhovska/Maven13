@@ -22,31 +22,36 @@ tasks.withType(JavaCompile) {
 }
 
 dependencies {
-    implementation 'org.apache.maven.plugins:maven-surefire-plugin:3.0.0'
-    testImplementation 'junit:junit:4.8.1'
+    //implementation 'org.apache.maven.plugins:maven-surefire-plugin:3.0.0'
+//    implementation project(':services')
+//    implementation project(':utils')
+//    implementation project(':web')
+//    implementation project(':admin')
+
+    testImplementation 'junit:junit:4.13.2'
 }
 
-task buildAdmin(type: Jar) {
-    archiveFileName = 'admin-module.jar'
-    from sourceSets.main.output
-}
+//task buildAdmin(type: Jar) {
+//    archiveFileName = 'admin-module.jar'
+//    from sourceSets.main.output
+//}
+//
+//task buildWeb(type: War) {
+//    archiveFileName = 'web-module.war'
+//    webInf {
+//        from 'src/main/webapp/WEB-INF'
+//    }
+//    from sourceSets.main.output
+//}
 
-task buildWeb(type: War) {
-    archiveFileName = 'web-module.war'
-    webInf {
-        from 'src/main/webapp/WEB-INF'
-    }
-    from sourceSets.main.output
-}
-
-artifacts {
-    archives buildAdmin
-    archives buildWeb
-}
+//artifacts {
+//    archives buildAdmin
+//    archives buildWeb
+//}
 
 ////////////////
 
-
+//
 //project(':admin') {
 //    apply plugin: 'jar'
 //
@@ -58,7 +63,7 @@ artifacts {
 //        enabled = true
 //    }
 //}
-
+//
 //project(':web') {
 //    apply plugin: 'war'
 //
@@ -86,5 +91,5 @@ artifacts {
 //        testImplementation 'org.apache.maven.plugins:maven-surefire-plugin:2.22.2'
 //    }
 //}
-//
-//
+
+
